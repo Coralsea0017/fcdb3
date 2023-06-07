@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
-
+use App\Http\Controllers\PythonController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,4 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::view('/web', 'web')->name('web');
+
 Route::post('/images', [ImageController::class, 'storeAndProcessImage']);
+
+Route::post('/execute-python-and-search', [PythonController::class, 'executePythonAndSearch']);

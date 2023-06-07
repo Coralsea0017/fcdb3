@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\PythonController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +14,9 @@ use App\Http\Controllers\ImageController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome');
 
-Route::post('/images', [ImageController::class, 'storeAndProcessImage']);
+Route::post('/execute-python', [PythonController::class, 'executePythonAndSearch'])->name('upload');
+
+Route::view('/web', 'web')->name('web');
 
