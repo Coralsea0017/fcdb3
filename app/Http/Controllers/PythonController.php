@@ -20,7 +20,7 @@ class PythonController extends Controller
         // Update the image path to include the full storage path
         $imageFullPath = storage_path('app/' . $imagePath);
 
-        $process = new Process(['/usr/local/bin/python3.7', '/Applications/MAMP/htdocs/laravel/test-app/app/Python/modelinfo.py', $imageFullPath]);
+        $process = new Process(['/usr/local/bin/python/3.7', '/Applications/MAMP/htdocs/laravel/test-app/app/Python/modelinfo.py', $imageFullPath]);
 
         try {
             $process->mustRun();
