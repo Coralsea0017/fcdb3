@@ -20,7 +20,7 @@ if image is not None:
     image = image.astype('float32') / 255.0
 
     # Load the TFLite model
-    model_path = "/Applications/MAMP/htdocs/laravel/test-app/app/Python/model/TLVGG16.tflite"
+    model_path = "/home/users/2/deca.jp-broad-hyuga-0115/web/fcdb/app/Python/model/TLVGG16.tflite"
     interpreter = tf.lite.Interpreter(model_path=model_path)
     interpreter.allocate_tensors()
 
