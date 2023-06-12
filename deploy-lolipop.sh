@@ -2,7 +2,7 @@
 # デプロイ時にサーバー上で実行されるスクリプト
 
 # vendor以下をインストールして autoloadファイルを最適化
-/usr/local/php8.1/bin/php ../../composer.phar install --no-dev
+/usr/local/php/8.1/bin/php ../../composer.phar install --no-dev
 
 # 環境設定をコピー
 cp .env.lolipop .env
