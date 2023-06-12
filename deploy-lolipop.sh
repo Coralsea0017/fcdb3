@@ -15,7 +15,7 @@ cp .env.lolipop .env
 #/usr/local/php/8.1/bin/php artisan route:cache
 
 # viewキャッシュをクリア
-/usr/local/php8.1/bin/php artisan view:clear
+/usr/local/php/8.1/bin/php artisan view:clear
 
 # ログをクリア
 rm -f storage/logs/*.log
