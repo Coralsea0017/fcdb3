@@ -9,10 +9,10 @@ cp .env.lolipop .env
 
 
 # /configの設定情報を1ファイルにまとめておく
-/usr/local/php8.1/bin/php artisan config:cache
+/usr/local/php/8.1/bin/php artisan config:cache
 
 # route情報をまとめておく ※CLOSUREがあると使用できないのでとりまコメントアウト……
-#/usr/local/php7.1/bin/php artisan route:cache
+#/usr/local/php/8.1/bin/php artisan route:cache
 
 # viewキャッシュをクリア
 /usr/local/php8.1/bin/php artisan view:clear
