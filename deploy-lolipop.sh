@@ -7,7 +7,6 @@
 # 環境設定をコピー
 cp .env.lolipop .env
 
-#変更
 # /configの設定情報を1ファイルにまとめておく
 /usr/local/php/8.1/bin/php artisan config:cache
 
